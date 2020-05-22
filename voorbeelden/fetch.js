@@ -11,7 +11,6 @@ function createPersonList() {
         .then((data) => data.json())
         .then(function (data) {
             let persons = data.results;
-            console.log(persons)
             persons.forEach(function (person) {
                 let li = document.createElement("li"),
                     img = document.createElement("img"),
