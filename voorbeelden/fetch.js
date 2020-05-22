@@ -12,7 +12,7 @@ function createPersonList() {
         .then(function (data) {
             let persons = data.results;
             console.log(persons)
-            persons.map(function (person) {
+            persons.forEach(function (person) {
                 let li = document.createElement("li"),
                     img = document.createElement("img"),
                     span = document.createElement("span");
