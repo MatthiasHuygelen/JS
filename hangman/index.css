@@ -1,0 +1,11 @@
+span{
+    padding: 0px 3px 0px 3px;
+}
+
+html{
+    text-align: center;
+}
+
+.restart{
+    cursor: pointer;
+}
