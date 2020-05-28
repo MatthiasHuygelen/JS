@@ -11,7 +11,7 @@ function createPersonList() {
 
     getData(url)
     .then(data => data.results)
-    .then(person => {
+    .then(persons => persons.forEach( person => {
         let li = document.createElement("li"),
             img = document.createElement("img"),
             span = document.createElement("span");
@@ -20,7 +20,7 @@ function createPersonList() {
         li.appendChild(img);
         li.appendChild(span);
         ul.appendChild(li);
-    });
+    }));
 
 }
 
