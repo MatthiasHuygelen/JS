@@ -1,0 +1,46 @@
+html {
+    height: 200%;
+    min-height: 400px;
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 3.5em;
+}
+
+body > div:first-of-type{
+    height: 150px;
+    border: 1px solid black;
+    width: 300px;
+    overflow-y: scroll;
+}
+
+body > div:first-of-type > div:first-of-type{
+    height: 600px;
+}
+
+#blok {
+    background-color: green;
+    display: inline-block;
+    color: white;
+    padding: 4em 3em;
+}
+
+#status {
+    position: fixed;
+    top: -1em;
+    left: 0em;
+    right: 0em;
+    font-family: monospace;
+    padding: 1em;
+    background-color: #ff8;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+#status.visible {
+    background:lime;
+}
+
+#status.invisible {
+    background: red;
+}

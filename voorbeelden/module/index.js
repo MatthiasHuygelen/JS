@@ -1,5 +1,5 @@
-import { getData } from "./dataService.js";
-import { createListElement } from "./elementService.js";
+import { getData } from "./js/dataService.js";
+import { createListElement } from "./js/elementService.js";
 
 let list = document.querySelector("ul");
 let items = getData();
